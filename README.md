@@ -16,6 +16,11 @@ Una libreria en c++ para el uso en trabajos universitarios **(Es necesario usar 
 | ---------------- | ----------------- | ---------------------------- | -------------------------------------------------- |
 | vector\<string\> | splitString       | string texto, char separador | Un vector con todas las palabras dentro del string |
 | int              | countWords        | string texto, char separador | La cantidad de palabras en un string               |
+| bool             | isUpperCase       | char letra                   | retorna verdadero si la letra es mayuscula         |
+| bool             | isLowerCase       | char letra                   | retorna verdadero si la letra es minuscula         |
+| bool             | isLetter          | char letra                   | retorna verdadero si el caracter una letra         |
+| char/string      | toLowerCase       | char letra / string texto    | transforma el char o string a minuscula            |
+| char/string      | toUpperCase       | char letra / string texto    | transforma el char o string a mayuscula            |
 
 ---
 
