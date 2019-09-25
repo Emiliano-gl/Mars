@@ -6,9 +6,9 @@
 
 #include <vector>
 
-vector<string> testVector = {"Emiliano", "Guerrero", "Lagunes"};
+vector<string> testVector = {"Emiliano", "Edgar", "Luis"};
 
-Moka::Context test("Marslib testing!", [](Moka::Context& it) {
+Moka::Context test("Mars testing!", [](Moka::Context& it) {
 
   it.has("Extra functions testing", [](Moka::Context& it) {
 
@@ -18,14 +18,24 @@ Moka::Context test("Marslib testing!", [](Moka::Context& it) {
 
   });
 
+  it.has("Math functions testing", [](Moka::Context& it) {
+
+    it.should("countDigits function", []() {
+        must_equal(mmath::countDigits(3),1);
+        must_equal(mmath::countDigits(323),3);
+        must_equal(mmath::countDigits(34567755),8);
+      });
+
+  });
+
   it.has("String functions testing", [](Moka::Context& it) {
 
     it.should("split function", []() {
-        must_equal(mstr::splitString("Emiliano Guerrero      Lagunes",' ') , testVector);
+        must_equal(mstr::splitString("Emiliano Edgar      Luis",' ') , testVector);
       });
 
     it.should("countWords function", []() {
-        must_equal(mstr::countWords("Emiliano Guerrero      Lagunes",' ') , 3);
+        must_equal(mstr::countWords("Emiliano Edgar      Luis",' ') , 3);
       });
 
     it.should("isLetter function", []() {

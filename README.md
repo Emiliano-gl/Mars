@@ -8,7 +8,7 @@ Una libreria en c++ para el uso en trabajos universitarios **(Es necesario usar 
 | --------- | --------------------- |
 | mextra    | 1                     |
 | mstr      | 7                     |
-| mmath     | 0                     |
+| mmath     | 1                     |
 
 ### namespace mstr ✏️
 
@@ -26,8 +26,9 @@ Una libreria en c++ para el uso en trabajos universitarios **(Es necesario usar 
 
 ### namespace mmath 📐
 
-| tipo de funcion | nombre de funcion | parametros | retorno |
-| --------------- | ----------------- | ---------- | ------- |
+| tipo de funcion | nombre de funcion | parametros                              | retorno                        |
+| --------------- | ----------------- | --------------------------------------- | ------------------------------ |
+| short/int/long  | countDigits       | short number / int number / long number | cantidad de digitos del numero |
 
 ---
 

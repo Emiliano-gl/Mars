@@ -8,7 +8,9 @@ using namespace std;
 
 
 namespace mmath {
-
+  auto countDigits(const short &number) -> int;
+  auto countDigits(const int &number) -> int;
+  auto countDigits(const long &number) -> int;
 }
 
 namespace mstr {
