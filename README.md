@@ -7,7 +7,7 @@ Una libreria en c++ para el uso en trabajos universitarios **(Es necesario usar 
 | Namespace | cantidad de funciones |
 | --------- | --------------------- |
 | mextra    | 1                     |
-| mstr      | 2                     |
+| mstr      | 7                     |
 | mmath     | 0                     |
 
 ### namespace mstr ✏️
