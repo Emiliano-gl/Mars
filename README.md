@@ -12,10 +12,10 @@ Una libreria en c++ para el uso en trabajos universitarios **(Es necesario usar 
 
 ### namespace mstr ✏️
 
-| tipo de funcion | nombre de funcion | parametros                   | retorno                                            |
-| --------------- | ----------------- | ---------------------------- | -------------------------------------------------- |
-| vector<string>  | splitString       | string texto, char separador | Un vector con todas las palabras dentro del string |
-| int             | countWords        | string texto, char separador | La cantidad de palabras en un string               |
+| tipo de funcion  | nombre de funcion | parametros                   | retorno                                            |
+| ---------------- | ----------------- | ---------------------------- | -------------------------------------------------- |
+| vector\<string\> | splitString       | string texto, char separador | Un vector con todas las palabras dentro del string |
+| int              | countWords        | string texto, char separador | La cantidad de palabras en un string               |
 
 ---
 
