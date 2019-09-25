@@ -1,30 +1,32 @@
 # Mars <img src="https://images.vexels.com/media/users/3/152536/isolated/preview/401b51c3a9098f12b566121c92009877-mars-planet-icon-by-vexels.png" width="40"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" width="36">
 
-Una libreria en c++ para el uso en trabajos universitarios 🎓
+Una libreria en c++ para el uso en trabajos universitarios **(Es necesario usar el estandar C++11)** 🎓
 
 ## Contenido 📚
 
 | Namespace | cantidad de funciones |
 | --------- | --------------------- |
-| extra     | 1                     |
-| str       | 0                     |
-| math      | 0                     |
+| mextra    | 1                     |
+| mstr      | 2                     |
+| mmath     | 0                     |
 
-### namespace str ✏️
+### namespace mstr ✏️
+
+| tipo de funcion | nombre de funcion | parametros                   | retorno                                            |
+| --------------- | ----------------- | ---------------------------- | -------------------------------------------------- |
+| vector<string>  | splitString       | string texto, char separador | Un vector con todas las palabras dentro del string |
+| int             | countWords        | string texto, char separador | La cantidad de palabras en un string               |
+
+---
+
+### namespace mmath 📐
 
 | tipo de funcion | nombre de funcion | parametros | retorno |
 | --------------- | ----------------- | ---------- | ------- |
 
 ---
 
-### namespace math 📐
-
-| tipo de funcion | nombre de funcion | parametros | retorno |
-| --------------- | ----------------- | ---------- | ------- |
-
----
-
-### namespace extra 🤔
+### namespace mextra 🤔
 
 | tipo de funcion | nombre de funcion | parametros | retorno       |
 | --------------- | ----------------- | ---------- | ------------- |
@@ -52,7 +54,7 @@ Ejemplo de uso de la libreria
 using namespace std;
 
 int main(){
-    cout << extra::helloWorld() << endl;
+    cout << mextra::helloWorld() << endl;
     return 0;
 }
 

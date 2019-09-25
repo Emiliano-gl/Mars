@@ -4,18 +4,29 @@
 #include "../MarsExtra.h"
 #include "../MarsString.h"
 
+#include <vector>
+
+vector<string> testVector = {"Emiliano", "Guerrero", "Lagunes"};
+
 Moka::Context test("Marslib testing!", [](Moka::Context& it) {
 
   it.has("Extra functions testing", [](Moka::Context& it) {
 
     it.should("helloWorld function", []() {
-        must_not_equal(extra::helloWorld(), "");
-        must_equal(extra::helloWorld(),"Hello World");
+        must_equal(mextra::helloWorld(),"Hello World");
       });
 
-    it.should("Prueba", [](){
-      must_equal(extra::helloWorld(), "asdf");
-    });
+  });
+
+  it.has("String functions testing", [](Moka::Context& it) {
+
+    it.should("split function", []() {
+        must_equal(mstr::splitString("Emiliano Guerrero      Lagunes",' ') , testVector);
+      });
+
+    it.should("countWords function", []() {
+        must_equal(mstr::countWords("Emiliano Guerrero      Lagunes",' ') , 3);
+      });
 
   });
 

@@ -1,7 +1,7 @@
 #ifndef MARSMATH_H
 #define MARSMATH_H
 
-namespace math {
+namespace mmath {
 
 }
 

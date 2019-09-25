@@ -2,18 +2,21 @@
 #define MARS_HPP
 
 #include <iostream>
+#include <vector>
+
 using namespace std;
 
 
-namespace math {
+namespace mmath {
 
 }
 
-namespace str {
-
+namespace mstr {
+  auto splitString(const string &text, const char &separator) -> vector<string>;
+  auto countWords(const string &text, const char &separator) -> auto;
 }
 
-namespace extra {
+namespace mextra {
   auto helloWorld() -> string;
 }
 
