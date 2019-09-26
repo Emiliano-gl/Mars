@@ -49,6 +49,13 @@ Moka::Context test("Mars testing!", [](Moka::Context& it) {
         must_equal(mtime::secondsToTime(10921),timeTest);
       });
 
+    it.should("isLeapYear function", []() {
+        must_equal(mtime::isLeapYear(2020),true);
+        must_equal(mtime::isLeapYear(2016),true);
+        must_equal(mtime::isLeapYear(2019),false);
+        must_equal(mtime::isLeapYear(2031),false);
+      });
+
   });
 
   it.has("String functions testing", [](Moka::Context& it) {

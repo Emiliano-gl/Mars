@@ -22,6 +22,7 @@ namespace mtime {
   auto getYear() -> int;
   auto getAge(const int &day, const int &month, const int &year) -> int;
   auto secondsToTime(const int &seconds) -> vector<int>;
+  auto isLeapYear(const int &year) -> bool;
 }
 
 namespace mstr {
