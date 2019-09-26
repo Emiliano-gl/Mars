@@ -4,13 +4,6 @@ Una libreria en c++ para el uso en trabajos universitarios **(Es necesario usar 
 
 ## Contenido 📚
 
-| Namespace | cantidad de funciones |
-| --------- | --------------------- |
-| mextra    | 1                     |
-| mstr      | 7                     |
-| mmath     | 2                     |
-| mtime     | 5                     |
-
 ### namespace mstr ✏️
 
 | tipo de funcion  | nombre de funcion | parametros                           | retorno                                            |
