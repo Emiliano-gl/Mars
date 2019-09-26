@@ -9,6 +9,11 @@
 
 vector<string> testVector = {"Emiliano", "Edgar", "Luis"};
 
+vector<int> timeTestMinute = {0,1,0};
+vector<int> timeTestHour = {1,0,0};
+vector<int> timeTestSecond = {0,0,1};
+vector<int> timeTest = {3,2,1};
+
 Moka::Context test("Mars testing!", [](Moka::Context& it) {
 
   it.has("Extra functions testing", [](Moka::Context& it) {
@@ -25,6 +30,23 @@ Moka::Context test("Mars testing!", [](Moka::Context& it) {
         must_equal(mmath::countDigits(3),1);
         must_equal(mmath::countDigits(323),3);
         must_equal(mmath::countDigits(34567755),8);
+      });
+
+    it.should("maxNumber3 function", []() {
+        must_equal(mmath::maxNumber3(3,6,9),9);
+        must_equal(mmath::maxNumber3(323,23664,67886),67886);
+        must_equal(mmath::maxNumber3(9999999,888888,666666),9999999);
+      });
+
+  });
+
+  it.has("Time functions testing", [](Moka::Context& it) {
+
+    it.should("secondsToTime function", []() {
+        must_equal(mtime::secondsToTime(60),timeTestMinute);
+        must_equal(mtime::secondsToTime(3600),timeTestHour);
+        must_equal(mtime::secondsToTime(1),timeTestSecond);
+        must_equal(mtime::secondsToTime(10921),timeTest);
       });
 
   });

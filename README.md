@@ -8,8 +8,8 @@ Una libreria en c++ para el uso en trabajos universitarios **(Es necesario usar 
 | --------- | --------------------- |
 | mextra    | 1                     |
 | mstr      | 7                     |
-| mmath     | 1                     |
-| mtime     | 4                     |
+| mmath     | 2                     |
+| mtime     | 5                     |
 
 ### namespace mstr ✏️
 
@@ -17,30 +17,32 @@ Una libreria en c++ para el uso en trabajos universitarios **(Es necesario usar 
 | ---------------- | ----------------- | ---------------------------- | -------------------------------------------------- |
 | vector\<string\> | splitString       | string texto, char separador | Un vector con todas las palabras dentro del string |
 | int              | countWords        | string texto, char separador | La cantidad de palabras en un string               |
-| bool             | isUpperCase       | char letra                   | verdadero si la letra es mayuscula                 |
-| bool             | isLowerCase       | char letra                   | verdadero si la letra es minuscula                 |
-| bool             | isLetter          | char letra                   | verdadero si el caracter una letra                 |
-| char/string      | toLowerCase       | char letra / string texto    | transforma el char o string a minuscula            |
-| char/string      | toUpperCase       | char letra / string texto    | transforma el char o string a mayuscula            |
+| bool             | isUpperCase       | char letra                   | Verdadero si la letra es mayuscula                 |
+| bool             | isLowerCase       | char letra                   | Verdadero si la letra es minuscula                 |
+| bool             | isLetter          | char letra                   | Verdadero si el caracter una letra                 |
+| char/string      | toLowerCase       | char letra / string texto    | Transforma el char o string a minuscula            |
+| char/string      | toUpperCase       | char letra / string texto    | Transforma el char o string a mayuscula            |
 
 ---
 
 ### namespace mmath 📐
 
-| tipo de funcion | nombre de funcion | parametros                              | retorno                        |
-| --------------- | ----------------- | --------------------------------------- | ------------------------------ |
-| short/int/long  | countDigits       | short number / int number / long number | cantidad de digitos del numero |
+| tipo de funcion | nombre de funcion | parametros                               | retorno                                     |
+| --------------- | ----------------- | ---------------------------------------- | ------------------------------------------- |
+| short/int/long  | countDigits       | short/int/long number                    | Cantidad de digitos del numero              |
+| short/int/long  | maxNumber3        | short/int/long number1, number2, number3 | El numero mas grande de los tres ingresados |
 
 ---
 
 ### namespace mtime ⏰
 
-| tipo de funcion | nombre de funcion | parametros                   | retorno                                  |
-| --------------- | ----------------- | ---------------------------- | ---------------------------------------- |
-| int             | getDay            |                              | El numero de dia actual                  |
-| int             | getMonth          |                              | El numero de mes actual                  |
-| int             | getYear           |                              | El numero de año actual                  |
-| int             | getAge            | int day, int month, int year | La edad actual de los valores ingresados |
+| tipo de funcion | nombre de funcion | parametros                   | retorno                                     |
+| --------------- | ----------------- | ---------------------------- | ------------------------------------------- |
+| int             | getDay            | ninguno                      | El numero de dia actual                     |
+| int             | getMonth          | ninguno                      | El numero de mes actual                     |
+| int             | getYear           | ninguno                      | El numero de año actual                     |
+| int             | getAge            | int day, int month, int year | La edad actual de los valores ingresados    |
+| vector\<int\>   | secondsToTime     | int seconds                  | Un vector con las horas, minutos y segundos |
 
 ---
 

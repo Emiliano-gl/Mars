@@ -4,6 +4,7 @@
 #include <ctime>
 #include <sstream>
 #include <cstdlib>
+#include <vector>
 
 using namespace std;
 
@@ -59,6 +60,21 @@ namespace mtime {
 
     return age;
 
+  }
+
+  auto secondsToTime(const int &seconds) -> vector<int>{
+    int hours = 0;
+    int res = 0;
+    int min = 0;
+
+    hours = seconds / 3600;
+    res = seconds % 3600;
+    min = res / 60;
+    res %= 60;
+
+    vector<int> time = {hours, min, res};
+
+    return time;
   }
 }
 
