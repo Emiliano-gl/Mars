@@ -9,6 +9,7 @@ Una libreria en c++ para el uso en trabajos universitarios **(Es necesario usar 
 | mextra    | 1                     |
 | mstr      | 7                     |
 | mmath     | 1                     |
+| mtime     | 4                     |
 
 ### namespace mstr ✏️
 
@@ -32,6 +33,17 @@ Una libreria en c++ para el uso en trabajos universitarios **(Es necesario usar 
 
 ---
 
+### namespace mtime ⏰
+
+| tipo de funcion | nombre de funcion | parametros                   | retorno                                  |
+| --------------- | ----------------- | ---------------------------- | ---------------------------------------- |
+| int             | getDay            |                              | El numero de dia actual                  |
+| int             | getMonth          |                              | El numero de mes actual                  |
+| int             | getYear           |                              | El numero de año actual                  |
+| int             | getAge            | int day, int month, int year | La edad actual de los valores ingresados |
+
+---
+
 ### namespace mextra 🤔
 
 | tipo de funcion | nombre de funcion | parametros | retorno       |
@@ -45,9 +57,10 @@ Una libreria en c++ para el uso en trabajos universitarios **(Es necesario usar 
 
 ```cpp
 #include "Mars/MarsCore.h"
-#include "Mars/MarsExtra.h" //para el namespace extra
-#include "Mars/MarsMath.h" //para el namespace math
-#include "Mars/MarsString.h" //para el namespace str
+#include "Mars/MarsExtra.h" // para el namespace mextra
+#include "Mars/MarsMath.h" // para el namespace mmath
+#include "Mars/MarsString.h" // para el namespace mstr
+#include "Mars/MarsTime" // para el namespace mtime
 ```
 
 Ejemplo de uso de la libreria

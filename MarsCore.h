@@ -13,6 +13,13 @@ namespace mmath {
   auto countDigits(const long &number) -> int;
 }
 
+namespace mtime {
+  auto getDay() -> int;
+  auto getMonth() -> int;
+  auto getYear() -> int;
+  auto getAge(const int &day, const int &month, const int &year) -> int;
+}
+
 namespace mstr {
   auto splitString(const string &text, const char &separator) -> vector<string>;
   auto countWords(const string &text, const char &separator) -> auto;

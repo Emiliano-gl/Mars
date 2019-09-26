@@ -24,6 +24,7 @@ HEADERS += \
     MarsExtra.h \
     MarsMath.h \
     MarsString.h \
+    MarsTime.h \
     Test/moka.h \
     Test/src/must.h \
     Test/src/test.h \
