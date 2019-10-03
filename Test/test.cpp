@@ -8,6 +8,7 @@
 #include <vector>
 
 vector<string> testVector = {"Emiliano", "Edgar", "Luis"};
+vector<string> testVector2 = {"Dog", "Cat", "Fish", "Mouse"};
 
 vector<int> timeTestMinute = {0,1,0};
 vector<int> timeTestHour = {1,0,0};
@@ -61,11 +62,13 @@ Moka::Context test("Mars testing!", [](Moka::Context& it) {
   it.has("String functions testing", [](Moka::Context& it) {
 
     it.should("split function", []() {
-        must_equal(mstr::splitString("Emiliano Edgar      Luis",' ') , testVector);
+        must_equal(mstr::splitString("Emiliano Edgar      Luis", ' ') , testVector);
+        must_equal(mstr::splitString("Dog Cat      Fish    Mouse", ' ') , testVector2);
       });
 
     it.should("countWords function", []() {
-        must_equal(mstr::countWords("Emiliano Edgar      Luis",' ') , 3);
+        must_equal(mstr::countWords("Emiliano Edgar      Luis" , ' ') , 3);
+        must_equal(mstr::countWords("Dog Cat      Fish    Mouse", ' ') , 4);
       });
 
     it.should("isLetter function", []() {
@@ -156,6 +159,37 @@ Moka::Context test("Mars testing!", [](Moka::Context& it) {
         must_equal(mstr::toUpperCase("UNIVERSO") , "UNIVERSO");
         must_equal(mstr::toUpperCase("./././{}[]()") , "./././{}[]()");
         must_equal(mstr::toUpperCase("1234567890") , "1234567890");
+      });
+
+    it.should("capitalizeWord function", []() {
+        must_equal(mstr::capitalizeWord("AlerGia") , "Alergia");
+        must_equal(mstr::capitalizeWord("CoMIdA") , "Comida");
+        must_equal(mstr::capitalizeWord("hola") , "Hola");
+        must_equal(mstr::capitalizeWord("PeDrO") , "Pedro");
+      });
+
+    it.should("joinString function", []() {
+        must_equal(mstr::joinString(testVector, ' ') , "Emiliano Edgar Luis");
+        must_equal(mstr::joinString(testVector2, ' ') , "Dog Cat Fish Mouse");
+      });
+
+    it.should("toCapitalize function", []() {
+        must_equal(mstr::toCapitalize("hEmORRaGia iNtERnA", ' ') , "Hemorragia Interna");
+        must_equal(mstr::toCapitalize("cOMiDa dE PerRO", ' ') , "Comida De Perro");
+        must_equal(mstr::toCapitalize("EsE oSo NeGrO 2", ' ') , "Ese Oso Negro 2");
+        must_equal(mstr::toCapitalize("ArRiBa y ABaJo", ' ') , "Arriba Y Abajo");
+      });
+
+    it.should("isPalindrome function", []() {
+        must_equal(mstr::isPalindrome("radar") , true);
+        must_equal(mstr::isPalindrome("ana") , true);
+        must_equal(mstr::isPalindrome("oso") , true);
+        must_equal(mstr::isPalindrome("reconocer") , true);
+        must_equal(mstr::isPalindrome("sometemos") , true);
+        must_equal(mstr::isPalindrome("perro") , false);
+        must_equal(mstr::isPalindrome("oreja") , false);
+        must_equal(mstr::isPalindrome("pegamento") , false);
+        must_equal(mstr::isPalindrome("jefa") , false);
       });
 
   });

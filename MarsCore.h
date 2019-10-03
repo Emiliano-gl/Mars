@@ -27,7 +27,7 @@ namespace mtime {
 
 namespace mstr {
   auto splitString(const string &text, const char &separator) -> vector<string>;
-  auto countWords(const string &text, const char &separator) -> auto;
+  auto countWords(const string &text, const char &separator) -> int;
   auto isUpperCase(const char &letter) -> bool;
   auto isLowerCase(const char &letter) -> bool;
   auto isLetter(const char &letter) -> bool;
@@ -35,6 +35,10 @@ namespace mstr {
   auto toLowerCase(const string &text) -> string;
   auto toUpperCase(const char &letter) -> char;
   auto toUpperCase(const string &text) -> string;
+  auto capitalizeWord(const string &word) -> string;
+  auto joinString(const vector<string> &words, const char &separator) -> string;
+  auto toCapitalize(const string &text, const char &separator) -> string;
+  auto isPalindrome(const string &text) -> bool;
 }
 
 namespace mextra {

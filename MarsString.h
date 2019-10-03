@@ -29,7 +29,7 @@ namespace mstr {
     return tokens;
   }
 
-  auto countWords(const string &text, const char &separator) -> auto{
+  auto countWords(const string &text, const char &separator) -> int{
     vector<string> words = splitString(text,separator);
     return words.size();
   }
@@ -101,6 +101,59 @@ namespace mstr {
       }
 
     return upperText;
+  }
+
+  auto capitalizeWord(const string &word) -> string{
+    string wordAux = word;
+
+    if(isLowerCase(word[0]))
+        wordAux[0] = toUpperCase(wordAux[0]);
+
+
+    for(int i = 1; i <= word.size(); i++){
+        if(isUpperCase(word[i]))
+            wordAux[i] = toLowerCase(word[i]);
+
+      }
+
+    return wordAux;
+  }
+
+  auto joinString(const vector<string> &words, const char &separator) -> string{
+    string text = "";
+    int size = 0;
+
+    for(string word : words){
+        text += word + separator;
+      }
+
+    size = text.size();
+    return text.erase(size-1);
+  }
+
+  auto toCapitalize(const string &text, const char &separator) -> string{
+    vector<string> words = splitString(text, separator);
+    vector<string> wordsFormated;
+    string formatedText = "";
+
+    for(string word : words){
+        wordsFormated.push_back(capitalizeWord(word));
+      }
+
+    formatedText = joinString(wordsFormated, separator);
+    return formatedText;
+  }
+
+  auto isPalindrome(const string &text) -> bool{
+    bool equal = true;
+    long longitud = text.length()-1;
+
+    for(int i=0 ; i < text.length()/2 && equal ;i++) {
+        if(text[i]!=text[longitud-i]){
+            equal = false;
+          }
+      }
+    return equal;
   }
 }
 
