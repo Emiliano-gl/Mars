@@ -8,13 +8,13 @@ a
 
 | tipo de funcion  | nombre de funcion | parametros                                     | retorno                                                  |
 | ---------------- | ----------------- | ---------------------------------------------- | -------------------------------------------------------- |
-| vector\<string\> | splitString       | **string** texto, **char** separador           | Un vector con todas las palabras dentro del string       |
-| int              | countWords        | **string** texto, **char** separador           | La cantidad de palabras en un string                     |
-| bool             | isUpperCase       | **char** letra                                 | Verdadero si la letra es mayuscula                       |
-| bool             | isLowerCase       | **char** letra                                 | Verdadero si la letra es minuscula                       |
-| bool             | isLetter          | **char** letra                                 | Verdadero si el caracter una letra                       |
-| char/string      | toLowerCase       | **char** letra / **string** texto              | Transforma el char o string a minuscula                  |
-| char/string      | toUpperCase       | **char** letra / **string** texto              | Transforma el char o string a mayuscula                  |
+| vector\<string\> | splitString       | **string** text, **char** separator            | Un vector con todas las palabras dentro del string       |
+| int              | countWords        | **string** text, **char** separator            | La cantidad de palabras en un string                     |
+| bool             | isUpperCase       | **char** letter                                | Verdadero si la letra es mayuscula                       |
+| bool             | isLowerCase       | **char** letter                                | Verdadero si la letra es minuscula                       |
+| bool             | isLetter          | **char** letter                                | Verdadero si el caracter una letra                       |
+| char/string      | toLowerCase       | **char** letter / **string** text              | Transforma el char o string a minuscula                  |
+| char/string      | toUpperCase       | **char** letter / **string** text              | Transforma el char o string a mayuscula                  |
 | string           | capitalizeWord    | **string** word                                | Un string con la palabra capitalizada                    |
 | string           | joinString        | **vector\<string\>** words, **char** separator | Un string con todas las palabras unidas por el separador |
 | string           | toCapitalize      | **string** text, **char** separator            | Un string con el texto capitalizado                      |
@@ -35,9 +35,9 @@ a
 
 | tipo de funcion | nombre de funcion | parametros                               | retorno                                     |
 | --------------- | ----------------- | ---------------------------------------- | ------------------------------------------- |
-| int             | getDay            | ninguno                                  | El numero de dia actual                     |
-| int             | getMonth          | ninguno                                  | El numero de mes actual                     |
-| int             | getYear           | ninguno                                  | El numero de año actual                     |
+| int             | getDay            | none                                     | El numero de dia actual                     |
+| int             | getMonth          | none                                     | El numero de mes actual                     |
+| int             | getYear           | none                                     | El numero de año actual                     |
 | int             | getAge            | **int** day, **int** month, **int** year | La edad actual de los valores ingresados    |
 | vector\<int\>   | secondsToTime     | **int** seconds                          | Un vector con las horas, minutos y segundos |
 | bool            | isLeapYear        | **int** year                             | Verdadero si un año es bisiesto             |
@@ -48,7 +48,7 @@ a
 
 | tipo de funcion | nombre de funcion | parametros | retorno       |
 | --------------- | ----------------- | ---------- | ------------- |
-| string          | helloWorld        | ninguno    | "Hello world" |
+| string          | helloWorld        | none       | "Hello world" |
 
 ## Uso ℹ️
 
