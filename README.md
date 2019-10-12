@@ -20,7 +20,7 @@ a
 | string           | toCapitalize       | **string** text, **char** separator            | Un string con el texto capitalizado                       |
 | bool             | isPalindrome       | **string** text                                | Verdadero si el textoes un palindromo                     |
 | string           | removeCharToString | **string** text, **char** character            | Un string sin el caracter ingresado como parametro        |
-| int              | countCharsInString | **string** text, **char** character            | El numero de veces que aparece el caracter como parametro |
+| int              | countCharInString  | **string** text, **char** character            | El numero de veces que aparece el caracter como parametro |
 
 ---
 

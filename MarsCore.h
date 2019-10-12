@@ -40,7 +40,7 @@ namespace mstr {
   auto toCapitalize(const string &text, const char &separator) -> string;
   auto isPalindrome(const string &text) -> bool;
   auto removeCharToString(const string &text, const char &character) -> string;
-  auto countCharsInString(const string &text, const char &character) -> int;
+  auto countCharInString(const string &text, const char &character) -> int;
 }
 
 namespace mextra {

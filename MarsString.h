@@ -167,7 +167,7 @@ namespace mstr {
     return  textProcessed;
   }
 
-  auto countCharsInString(const string &text, const char &character) -> int{
+  auto countCharInString(const string &text, const char &character) -> int{
     int counter = 0;
 
     for(char letter : text){

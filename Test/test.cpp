@@ -213,13 +213,13 @@ Moka::Context test("\nMars testing!", [](Moka::Context& it) {
         must_equal(removeCharToString("super", 'a') , "super");
       });
 
-    it.should("countCharsInString function", []() {
-        must_equal(countCharsInString("radar", 'r') , 2);
-        must_equal(countCharsInString("pedro", 'e') , 1);
-        must_equal(countCharsInString("arana", 'a') , 3);
-        must_equal(countCharsInString("oso hormiguero", 'o') , 4);
-        must_equal(countCharsInString("aaaaaa", 'a') , 6);
-        must_equal(countCharsInString("perro", 'z') , 0);
+    it.should("countCharInString function", []() {
+        must_equal(countCharInString("radar", 'r') , 2);
+        must_equal(countCharInString("pedro", 'e') , 1);
+        must_equal(countCharInString("arana", 'a') , 3);
+        must_equal(countCharInString("oso hormiguero", 'o') , 4);
+        must_equal(countCharInString("aaaaaa", 'a') , 6);
+        must_equal(countCharInString("perro", 'z') , 0);
       });
 
   });
