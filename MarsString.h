@@ -107,12 +107,12 @@ namespace mstr {
     string wordAux = word;
 
     if(isLowerCase(word[0]))
-        wordAux[0] = toUpperCase(wordAux[0]);
+      wordAux[0] = toUpperCase(wordAux[0]);
 
 
     for(int i = 1; i <= word.size(); i++){
         if(isUpperCase(word[i]))
-            wordAux[i] = toLowerCase(word[i]);
+          wordAux[i] = toLowerCase(word[i]);
 
       }
 
@@ -154,6 +154,28 @@ namespace mstr {
           }
       }
     return equal;
+  }
+
+  auto removeCharToString(const string &text, const char &character) -> string{
+    string textProcessed = "";
+
+    for(char letter : text){
+        if(letter != character)
+          textProcessed += letter;
+      }
+
+    return  textProcessed;
+  }
+
+  auto countCharsInString(const string &text, const char &character) -> int{
+    int counter = 0;
+
+    for(char letter : text){
+        if(letter == character)
+          counter += 1;
+      }
+
+    return counter;
   }
 }
 

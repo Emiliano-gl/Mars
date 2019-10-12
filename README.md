@@ -6,19 +6,21 @@ Una libreria en c++ para el uso en trabajos universitarios **(Es necesario usar 
 a
 ### namespace mstr ✏️
 
-| tipo de funcion  | nombre de funcion | parametros                                     | retorno                                                  |
-| ---------------- | ----------------- | ---------------------------------------------- | -------------------------------------------------------- |
-| vector\<string\> | splitString       | **string** text, **char** separator            | Un vector con todas las palabras dentro del string       |
-| int              | countWords        | **string** text, **char** separator            | La cantidad de palabras en un string                     |
-| bool             | isUpperCase       | **char** letter                                | Verdadero si la letra es mayuscula                       |
-| bool             | isLowerCase       | **char** letter                                | Verdadero si la letra es minuscula                       |
-| bool             | isLetter          | **char** letter                                | Verdadero si el caracter una letra                       |
-| char/string      | toLowerCase       | **char** letter / **string** text              | Transforma el char o string a minuscula                  |
-| char/string      | toUpperCase       | **char** letter / **string** text              | Transforma el char o string a mayuscula                  |
-| string           | capitalizeWord    | **string** word                                | Un string con la palabra capitalizada                    |
-| string           | joinString        | **vector\<string\>** words, **char** separator | Un string con todas las palabras unidas por el separador |
-| string           | toCapitalize      | **string** text, **char** separator            | Un string con el texto capitalizado                      |
-| bool             | isPalindrome      | **string** text                                | Verdadero si el textoes un palindromo                    |
+| tipo de funcion  | nombre de funcion  | parametros                                     | retorno                                                   |
+| ---------------- | ------------------ | ---------------------------------------------- | --------------------------------------------------------- |
+| vector\<string\> | splitString        | **string** text, **char** separator            | Un vector con todas las palabras dentro del string        |
+| int              | countWords         | **string** text, **char** separator            | La cantidad de palabras en un string                      |
+| bool             | isUpperCase        | **char** letter                                | Verdadero si la letra es mayuscula                        |
+| bool             | isLowerCase        | **char** letter                                | Verdadero si la letra es minuscula                        |
+| bool             | isLetter           | **char** letter                                | Verdadero si el caracter una letra                        |
+| char/string      | toLowerCase        | **char** letter / **string** text              | Transforma el char o string a minuscula                   |
+| char/string      | toUpperCase        | **char** letter / **string** text              | Transforma el char o string a mayuscula                   |
+| string           | capitalizeWord     | **string** word                                | Un string con la palabra capitalizada                     |
+| string           | joinString         | **vector\<string\>** words, **char** separator | Un string con todas las palabras unidas por el separador  |
+| string           | toCapitalize       | **string** text, **char** separator            | Un string con el texto capitalizado                       |
+| bool             | isPalindrome       | **string** text                                | Verdadero si el textoes un palindromo                     |
+| string           | removeCharToString | **string** text, **char** character            | Un string sin el caracter ingresado como parametro        |
+| int              | countCharsInString | **string** text, **char** character            | El numero de veces que aparece el caracter como parametro |
 
 ---
 

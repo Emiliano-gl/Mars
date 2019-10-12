@@ -39,6 +39,8 @@ namespace mstr {
   auto joinString(const vector<string> &words, const char &separator) -> string;
   auto toCapitalize(const string &text, const char &separator) -> string;
   auto isPalindrome(const string &text) -> bool;
+  auto removeCharToString(const string &text, const char &character) -> string;
+  auto countCharsInString(const string &text, const char &character) -> int;
 }
 
 namespace mextra {
