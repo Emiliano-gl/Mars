@@ -2,7 +2,7 @@
 #define MARSSTRING_H
 
 #include <iostream>
-#include <iterator>
+#include <map>
 #include <vector>
 
 using namespace std;
@@ -176,6 +176,23 @@ namespace mstr {
       }
 
     return counter;
+  }
+
+  auto countLetters(const string &text) -> map<char, int>{
+    string auxString = "";
+    map<char, int> letters;
+
+    for(char character : text){
+        if(isLetter(character))
+          auxString += toLowerCase(character);
+      }
+
+    while(auxString != ""){
+        letters[auxString[0]] = countCharInString(auxString, auxString[0]);
+        auxString = removeCharToString(auxString, auxString[0]);
+      }
+
+    return letters;
   }
 }
 

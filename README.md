@@ -21,6 +21,7 @@ a
 | bool             | isPalindrome       | **string** text                                | Verdadero si el textoes un palindromo                     |
 | string           | removeCharToString | **string** text, **char** character            | Un string sin el caracter ingresado como parametro        |
 | int              | countCharInString  | **string** text, **char** character            | El numero de veces que aparece el caracter como parametro |
+| map\<char,int\>  | countLetters       | **string** text                                | Un map con los caracteres y cuantas veces aparecen        |
 
 ---
 

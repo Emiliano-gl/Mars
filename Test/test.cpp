@@ -6,6 +6,7 @@
 #include "../MarsTime.h"
 
 #include <vector>
+#include <map>
 
 using namespace mmath;
 using namespace mtime;
@@ -220,6 +221,28 @@ Moka::Context test("\nMars testing!", [](Moka::Context& it) {
         must_equal(countCharInString("oso hormiguero", 'o') , 4);
         must_equal(countCharInString("aaaaaa", 'a') , 6);
         must_equal(countCharInString("perro", 'z') , 0);
+      });
+
+    it.should("countLetters function", []() {
+
+        map<char, int> testmap = countLetters("Hola arana");
+        map<char, int> testmap2 = countLetters("diez puntos");
+        map<char, int> testmap3 = countLetters("comida raapiiddaa");
+
+        must_equal(testmap['a'] , 4);
+        must_equal(testmap['n'] , 1);
+        must_equal(testmap['h'] , 1);
+        must_equal(testmap['l'] , 1);
+
+        must_equal(testmap2['d'] , 1);
+        must_equal(testmap2['o'] , 1);
+        must_equal(testmap2['r'] , 0);
+        must_equal(testmap2['z'] , 1);
+
+        must_equal(testmap3['a'] , 5);
+        must_equal(testmap3['i'] , 3);
+        must_equal(testmap3['d'] , 3);
+        must_equal(testmap3['m'] , 1);
       });
 
   });

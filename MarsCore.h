@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <vector>
+#include <map>
 
 using namespace std;
 
@@ -41,6 +42,7 @@ namespace mstr {
   auto isPalindrome(const string &text) -> bool;
   auto removeCharToString(const string &text, const char &character) -> string;
   auto countCharInString(const string &text, const char &character) -> int;
+  auto countLetters(const string &text) -> map<char, int>;
 }
 
 namespace mextra {
