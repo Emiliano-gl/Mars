@@ -9,10 +9,10 @@ using namespace std;
 
 
 namespace mmath {
-  auto countDigits(const short &number) -> int;
   auto countDigits(const int &number) -> int;
   auto countDigits(const long &number) -> int;
-  auto maxNumber3(const short &number1, const short &number2, const short &number3) -> short;
+  auto addDigits(const int &number) -> int;
+  auto addDigits(const long &number) -> int;
   auto maxNumber3(const int &number1, const int &number2, const int &number3) -> int;
   auto maxNumber3(const long &number1, const long &number2, const long &number3) -> long;
 }

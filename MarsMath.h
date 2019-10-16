@@ -6,10 +6,6 @@
 using namespace std;
 
 namespace mmath {
-  auto countDigits(const short &number) -> int{
-    string num = to_string(number);
-    return num.length();
-  }
 
   auto countDigits(const int &number) -> int{
     string num = to_string(number);
@@ -21,18 +17,29 @@ namespace mmath {
     return num.length();
   }
 
-  auto maxNumber3(const short &number1, const short &number2, const short &number3) -> short{
-    if(number1 <= number2){
-        if(number2 >= number3)
-          return number2;
-        else
-          return number3;
-      } else {
-        if(number1 >= number3)
-          return number1;
-        else
-          return number3;
+  auto addDigits(const int &number) -> int{
+    int extNum, sumDigit = 0, numberAux = number;
+
+    while(numberAux != 0) {
+        extNum = numberAux % 10;
+        numberAux /= 10;
+        sumDigit += extNum;
       }
+
+    return sumDigit;
+  }
+
+  auto addDigits(const long &number) -> int{
+    long extNum, numberAux = number;
+    int sumDigit = 0;
+
+    while(numberAux != 0) {
+        extNum = numberAux % 10;
+        numberAux /= 10;
+        sumDigit += extNum;
+      }
+
+    return sumDigit;
   }
 
   auto maxNumber3(const int &number1, const int &number2, const int &number3) -> int{
