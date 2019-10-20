@@ -15,6 +15,7 @@ namespace mmath {
   auto addDigits(const long &number) -> int;
   auto maxNumber3(const int &number1, const int &number2, const int &number3) -> int;
   auto maxNumber3(const long &number1, const long &number2, const long &number3) -> long;
+  auto randomNumber(const int &min, const int &max) -> int;
 }
 
 namespace mtime {

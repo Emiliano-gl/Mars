@@ -27,11 +27,12 @@ a
 
 ### namespace mmath 📐
 
-| tipo de funcion | nombre de funcion | parametros                             | retorno                                     |
-| --------------- | ----------------- | -------------------------------------- | ------------------------------------------- |
-| int             | countDigits       | **int/long** number                    | Cantidad de digitos del numero              |
-| int             | maxNumber3        | **int/long** number1, number2, number3 | El numero mas grande de los tres ingresados |
-| int             | addDigits         | **int/long** number                    | La suma de todos los digitos                |
+| tipo de funcion | nombre de funcion | parametros                             | retorno                                       |
+| --------------- | ----------------- | -------------------------------------- | --------------------------------------------- |
+| int             | countDigits       | **int/long** number                    | Cantidad de digitos del numero                |
+| int             | maxNumber3        | **int/long** number1, number2, number3 | El numero mas grande de los tres ingresados   |
+| int             | addDigits         | **int/long** number                    | La suma de todos los digitos                  |
+| int             | randomNumber      | **int** min, **int** max               | Un numero al azar entre el minimo y el maximo |
 
 ---
 

@@ -2,6 +2,8 @@
 #define MARSMATH_H
 
 #include<iostream>
+#include <stdlib.h>
+#include <time.h>
 
 using namespace std;
 
@@ -68,6 +70,12 @@ namespace mmath {
         else
           return number3;
       }
+  }
+
+  auto randomNumber(const int &min, const int &max) -> int{
+    srand(time(NULL));
+
+    return rand() % max + min;
   }
 }
 
